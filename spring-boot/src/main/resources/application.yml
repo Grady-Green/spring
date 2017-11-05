@@ -7,22 +7,22 @@ spring:
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver #com.mysql.jdbc.Driver
-    minIdle: 1
-    maxActive: 2
-    initialSize: 1
-    timeBetweenEvictionRunsMillis: 3000
-    minEvictableIdleTimeMillis: 300000
-    validationQuery: SELECT 'ZTM' FROM DUAL
-    testWhileIdle: true
-    testOnBorrow: false
-    testOnReturn: false
+#    minIdle: 1
+#    maxActive: 2
+#    initialSize: 1
+#    timeBetweenEvictionRunsMillis: 3000
+#    minEvictableIdleTimeMillis: 300000
+#    validationQuery: SELECT 'ZTM' FROM DUAL
+#    testWhileIdle: true
+#    testOnBorrow: false
+#    testOnReturn: false
   activemq:
     broker-url: tcp://10.1.1.186:61616
     in-memory: true
     pool:
       enabled: false
   jms:
-    pub-sub-domain: true
+    pub-sub-domain: true #打开topic模式
   data:
     solr:
       host: http://10.1.1.186:8983/solr/testCore

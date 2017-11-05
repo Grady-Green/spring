@@ -22,8 +22,8 @@ public class SolrController {
     @Autowired
     private SolrClient solrClient;
 
-    @RequestMapping("/updateIndex")
-    public void updateIndex()throws Exception{
+    @RequestMapping("/saveIndex")
+    public void saveIndex()throws Exception{
         Collection<SolrInputDocument> list = new ArrayList<>();
         for(int i = 1; i<=30;i++){
             SolrInputDocument document = new SolrInputDocument();

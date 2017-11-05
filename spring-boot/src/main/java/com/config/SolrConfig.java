@@ -4,6 +4,7 @@ import org.apache.solr.client.solrj.SolrClient;
 import org.apache.solr.client.solrj.impl.HttpSolrClient;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 /**
@@ -12,7 +13,7 @@ import org.springframework.stereotype.Component;
  * @Author Grady
  * Created on 2017/10/27.
  */
-@Component
+@Configuration
 public class SolrConfig {
     @Bean
     public SolrClient solrClient(@Value("${spring.data.solr.host}")String host){
