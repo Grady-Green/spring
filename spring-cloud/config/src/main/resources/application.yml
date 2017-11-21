@@ -7,7 +7,7 @@ spring:
         config:
             server:
                 git:
-                    uri: https://github.com/gongyu649424146/spring  #配置git仓库地址(必需配置）
+                    uri: https://github.com/Grady-Green/spring  #配置git仓库地址(必需配置）
                     search-paths: /spring-cloud/config-files #配置仓库路径(相对路径)
 
 

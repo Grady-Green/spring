@@ -12,7 +12,9 @@
         <artifactId>spring-cloud</artifactId>
         <version>1.0</version>
     </parent>
-
+    <!--<properties>-->
+        <!--<feign-okhttp.version>9.5.1</feign-okhttp.version>-->
+    <!--</properties>-->
 
     <dependencies>
         <dependency>
@@ -23,7 +25,11 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-feign</artifactId>
         </dependency>
-
+        <!--<dependency>-->
+            <!--<groupId>io.github.openfeign</groupId>-->
+            <!--<artifactId>feign-okhttp</artifactId>-->
+            <!--<version>${feign-okhttp.version}</version>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
