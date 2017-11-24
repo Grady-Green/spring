@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: zuul
+
+server:
+  port: 8501
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8101/eureka/
+#zuul 传统路由配置
+#单实例配置：通过一组zuul.routes.<route>.path与zuul.routes.<route>.url参数对的方式配置，比如：
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      url: http://localhost:8080/
+#多实例配置：通过一组zuul.routes.<route>.path与zuul.routes.<route>.serviceId参数对的方式配置，比如：
+    api-b:
+      path: /api-b/**
+      serviceId: api-b
+
+api-b:
+  ribbon:
+    listOfServers: http://localhost:2001/, http://localhost:2002/
