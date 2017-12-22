@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>JavaPratice</groupId>
+	<groupId>JavaPractice</groupId>
 	<artifactId>eureka</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -12,12 +12,10 @@
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
-		<groupId>JavaPratice</groupId>
+		<groupId>JavaPractice</groupId>
 		<artifactId>spring-cloud</artifactId>
 		<version>1.0</version>
 	</parent>
-
-
 
 	<dependencies>
 		<dependency>
@@ -33,7 +31,9 @@
 	</dependencies>
 
 
-
+	<build>
+		<finalName>eureka-reg</finalName>
+	</build>
 
 
 
