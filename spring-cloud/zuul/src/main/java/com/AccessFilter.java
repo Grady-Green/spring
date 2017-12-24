@@ -16,7 +16,11 @@ import javax.servlet.http.HttpServletRequest;
 public class AccessFilter extends ZuulFilter {
     private static Logger log = LoggerFactory.getLogger(AccessFilter.class);
     /**
-     *过滤器的类型，它决定过滤器在请求的哪个生命周期中执行。这里定义为pre，代表会在请求被路由之前执行。
+     *过滤器的类型，它决定过滤器在请求的哪个生命周期中执行。
+     * pre：可以在请求被路由之前调用。
+     * routing：在路由请求时候被调用。
+     * post：在routing和error过滤器之后被调用。
+     * error：处理请求时发生错误时被调用。
      * @return
      */
     @Override
@@ -39,11 +43,13 @@ public class AccessFilter extends ZuulFilter {
      */
     @Override
     public boolean shouldFilter() {
-        return false;
+        return true;
     }
 
     /**
      *过滤器的具体逻辑。
+     * 在该函数中，我们可以实现自定义的过滤逻辑，来确定是否要拦截当前的请求，
+     * 不对其进行后续的路由，或是在请求路由返回结果之后，对处理结果做一些加工等。
      * @return
      */
     @Override
