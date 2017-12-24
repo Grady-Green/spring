@@ -1,7 +1,16 @@
 *.DS_Store
 /*
 .DS_Store
+
 !pom.xml
 !/*/src/
 !/*/pom.xml
 !.gitignore
+!/spring-cloud/*/src/
+!/spring-cloud/*/pom.xml
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
