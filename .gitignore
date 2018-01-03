@@ -27,15 +27,4 @@ target/
 
 # system ignore
 .DS_Store
-
-!pom.xml
-!/*/src/
-!/*/pom.xml
-!.gitignore
-!/spring-cloud/*/src/
-!/spring-cloud/*/pom.xml
-
-### IntelliJ IDEA ###
-
 Thumbs.db
-
