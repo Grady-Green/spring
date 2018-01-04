@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: spring-security
+  thymeleaf:
+    prefix:
+server:
+  port: 8080
+  display-name: spring-security
+
