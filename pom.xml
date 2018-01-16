@@ -15,7 +15,6 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -48,6 +47,7 @@
         <module>spring-data</module>
         <module>spring-mvc</module>
         <module>spring-freemarker</module>
+        <module>quartz</module>
     </modules>
     <build>
         <plugins>
