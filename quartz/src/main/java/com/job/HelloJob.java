@@ -1,6 +1,7 @@
 package com.job;
 
 import org.quartz.Job;
+import org.quartz.JobDetail;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
 /**
@@ -9,6 +10,10 @@ import org.quartz.JobExecutionException;
 public class HelloJob implements Job{
     @Override
     public void execute(JobExecutionContext jobExecutionContext) throws JobExecutionException {
+        JobDetail jobDetail = jobExecutionContext.getJobDetail();
+        String name = jobDetail.getKey().getName();
+        String group = jobDetail.getKey().getGroup();
+
         System.out.println("Trigger.......");
     }
 }

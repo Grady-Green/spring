@@ -1,6 +1,6 @@
 package com.entity;
 
-import lombok.Data;
+import lombok.*;
 
 @Data
 public class Student {
