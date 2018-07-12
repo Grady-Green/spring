@@ -8,6 +8,7 @@ spring:
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver #com.mysql.jdbc.Driver
 #    minIdle: 1
+    initialize: true
 #    maxActive: 2
 #    initialSize: 1
 #    timeBetweenEvictionRunsMillis: 3000

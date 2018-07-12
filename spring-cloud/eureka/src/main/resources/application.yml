@@ -6,12 +6,12 @@ eureka:
         hostname: localhost
         instance-id: ${spring.application.name}:${random.int}
 server:
-<<<<<<< HEAD
-  port: ${random.int(10000,[19999])} # 随机数
+
+#  port: ${random.int(10000,[19999])} # 随机数
 #    port: 1001
-=======
+
     port: 8101
->>>>>>> c46fea14fd50e698bcb11c771a9d7a41c59d76d5
+
 spring:
     application:
         name: eureka-server
